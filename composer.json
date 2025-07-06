@@ -1,6 +1,6 @@
 {
     "name": "just404/flarum-disable-notification-emails",
-    "description": "A Flarum extension to disable all email notifications except for registration and password reset.",
+    "description": "A Flarum extension to disable specific email notifications.",
     "type": "flarum-extension",
     "keywords": [
         "flarum",
@@ -9,8 +9,18 @@
         "disable"
     ],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Just404",
+            "homepage": "https://just404.eu.org"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/your-username/flarum-disable-notification-emails",
+        "forum": "https://discuss.flarum.org/d/your-discussion-id"
+    },
     "require": {
-        "flarum/core": "^1.0.0"
+        "flarum/core": "^1.0"
     },
     "autoload": {
         "psr-4": {
@@ -18,12 +28,12 @@
         }
     },
     "extra": {
-        "flarum": {
-            "extension-main": "src/Extension.php",
+        "flarum-extension": {
             "title": "Just404 Email Blocker",
+            "category": "feature",
             "icon": {
-                "name": "fas fa-envelope-square",
-                "backgroundColor": "#2980b9",
+                "name": "fas fa-envelope-open-text",
+                "backgroundColor": "#e74c3c",
                 "color": "#fff"
             }
         }
